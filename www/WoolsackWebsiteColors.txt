@@ -1,0 +1,6 @@
+Woolsack Website Colors
+  Colors:
+    Lowlight background: #5f2b2b
+    Highlight background: #d38f54
+    Highlight hover: #ffb758
+    Body text: #e8d5d4

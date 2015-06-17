@@ -1921,14 +1921,6 @@ u\24 + *,
 
 /* Basic */
 
-/*
-  Colors:
-    Main background: #5f2b2b
-    Body text: #e8d5d4
-
-*/
-
-
 body {
   background: #5f2b2b;
 }
@@ -2414,10 +2406,10 @@ input[type="reset"],
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   background: none;
   border: solid 1px;
   color: inherit;
@@ -2446,8 +2438,8 @@ input[type="button"].special,
 input[type="submit"].special,
 input[type="reset"].special,
 .button.special {
-  background: #83d3c9;
-  border-color: #83d3c9;
+  background: #d38f54;
+  border-color: #d38f54;
   color: #fff !important;
 }
 
@@ -2455,8 +2447,9 @@ input[type="button"].special:hover,
 input[type="submit"].special:hover,
 input[type="reset"].special:hover,
 .button.special:hover {
-  background: #96dad1 !important;
-  border-color: #96dad1 !important;
+  background: #e0a769 !important;
+  border-color: #e0a769 !important;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
 input[type="button"].fit,
@@ -2487,12 +2480,11 @@ input[type="reset"].small,
 }
 
 .wrapper.style2 {
-  background-color: #83d3c9;
-  background-image: url("images/light-bl.svg"), url("images/light-br.svg");
-  background-position: bottom left, bottom right;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 25em, 25em;
+  background-color: #d38f54;
+  box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.1);
   color: #fff;
+  font-weight: normal;
+  border-radius: 5px;
 }
 
 .wrapper.style2 .button:hover {
@@ -2512,12 +2504,17 @@ input[type="reset"].small,
 
 .wrapper.style3 {
   background: #fff;
-  color: inherit;
+  color: #5F2B2B;
+  font-weight: normal;
+  border-radius: 5px;
+
 }
 
 .wrapper.style4 {
   background: #fff;
-  color: inherit;
+  color: #5F2B2B;
+  font-weight: normal;
+  border-radius: 5px;
   padding: 4em;
 }
 
@@ -2604,8 +2601,8 @@ input[type="reset"].small,
 }
 
 #header {
-  background: #fff;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+  background: rgba(255, 255, 255, 0.90);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.075);
   color:#5f2b2b;
   cursor: default;
   font-size: 0.8em;
@@ -2648,7 +2645,7 @@ input[type="reset"].small,
   color: inherit;
   display: inline-block;
   line-height: 1em;
-  padding: 0.6em 0.75em;
+  padding: 0.6em 0.75em 0.45em 0.75em;
   text-decoration: none;
 }
 
@@ -2756,14 +2753,14 @@ input[type="reset"].small,
   -webkit-transition: none;
   -ms-transition: none;
   transition: none;
-  color: inherit;
+  color: #5f2b2b;
   text-decoration: none;
   padding: 0 1em;
   border: 0;
 }
 
 .dropotron > li:hover > a {
-  background: #83d3c9;
+  background: #ffb758;
   color: #fff;
 }
 
@@ -2814,12 +2811,12 @@ input[type="reset"].small,
 }
 
 #banner {
-  background-attachment: scroll, scroll, scroll, fixed;
-  background-color: #645862;
-  background-image: url("images/overlay.png"), url("../../images/banner-v2.jpg");
-  background-position: top left, top center;
-  background-repeat: repeat, no-repeat;
   background-size: auto, cover;
+  background-attachment: scroll, fixed;
+  background-color: #645862;
+  background-image: url("images/overlay.png"), url("../../images/banner-v22.jpg");
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat;
   color: #fff;
   cursor: default;
   padding: 6em 0;
@@ -2879,10 +2876,23 @@ input[type="reset"].small,
   margin: 2em 0 0 0;
 }
 
+#banner .typography-container {
+  height: 80px;
+  width: 80px;
+}
+
+#banner .typography {
+  width: 510px;
+  margin-left: -65px;
+  margin-top: -100px;
+}
+
 /* Main */
 
 #main {
   padding: 7em 0;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.4);
+
 }
 
 #main > :last-child {
@@ -2908,12 +2918,12 @@ body.index #main {
 /* CTA */
 
 #cta {
-  background-attachment: scroll, scroll, scroll, fixed;
+  background-attachment: fixed;
   background-color: #645862;
-  background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
-  background-position: top left, top right, top left, bottom center;
-  background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-  background-size: 25em, 25em, auto, cover;
+  background-image: url("../../images/banner.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   padding: 5em;
   text-align: center;
@@ -3012,13 +3022,18 @@ body.index #main {
 
   /* Banner */
   #banner {
-    background-attachment: scroll;
   }
+
+  #banner .typography {
+    width: 480px;
+    margin-left: -65px;
+    margin-top: -90px;
+  }
+
 
   /* CTA */
   #cta {
     padding: 4em;
-    background-attachment: scroll;
   }
 
   /* Footer */
@@ -3091,7 +3106,7 @@ body.index #main {
 
   /* CTA */
   #cta {
-    background-size: 15em, 15em, auto, cover;
+    background-size: cover;
     padding: 3em;
   }
 
@@ -3175,6 +3190,9 @@ body.index #main {
   /* Banner */
   #banner {
     margin: 0;
+    background-attachment: scroll;
+    background-position-y: 0;
+
   }
 
   /* Wrapper */
@@ -3208,6 +3226,7 @@ body.index #main {
   /* CTA */
   #cta {
     margin: 0;
+    background-attachment: scroll;
   }
 
   /* Footer */
@@ -3439,6 +3458,18 @@ body.index #main {
     text-align: center;
   }
 
+  #banner .typography-container {
+    height: auto;
+    width: auto;
+  }
+
+  #banner .typography {
+    width: 480px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+
   footer.major {
     padding-top: 0;
   }
@@ -3541,7 +3572,7 @@ body.index #main {
 
   /* CTA */
   #cta {
-    background-size: 10em, 10em, auto, cover;
+    background-size: cover;
     padding: 3em 1.5em;
   }
 
@@ -3571,6 +3602,14 @@ body.index #main {
     left: 8px;
     width: 50px;
     height: 34px;
+  }
+
+}
+
+@media screen and (max-width: 560px) {
+
+  #banner .typography {
+    width: 300px;
   }
 
 }
